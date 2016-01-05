@@ -5,15 +5,15 @@ import (
 	"math"
 )
 
-type input struct {
+type testCase struct {
 	a, b, N int
 }
 
 func main() {
 
 	var T, seq int
-	var in input
-	var v []input
+	var tc testCase
+	var testCases []testCase
 
 	fmt.Scanf("%d\n", &T)
 	if T < 0 || T > 500 {
@@ -23,33 +23,33 @@ func main() {
 
 	for i := 0; i < T; i++ {
 
-		fmt.Scanf("%d%d%d\n", &in.a, &in.b, &in.N)
+		fmt.Scanf("%d%d%d\n", &tc.a, &tc.b, &tc.N)
 
-		if in.a < 0 || in.a > 50 {
+		if tc.a < 0 || tc.a > 50 {
 			fmt.Println("a constrains failed.")
 			return
 		}
 
-		if in.b < 0 || in.b > 50 {
+		if tc.b < 0 || tc.b > 50 {
 			fmt.Println("b constraints failed.")
 			return
 		}
 
-		if in.N < 1 || in.N > 15 {
+		if tc.N < 1 || tc.N > 15 {
 			fmt.Println("N constraints failed.")
 			return
 		}
 
-		v = append(v, in)
+		testCases = append(testCases, tc)
 
 	}
 
-	for _, val := range v {
-		for j := 0; j < val.N; j++ {
+	for _, c := range testCases {
+		for j := 0; j < c.N; j++ {
 			if j == 0 {
-				seq = val.a + (int(math.Pow(2, float64(j))) * val.b)
+				seq = c.a + (int(math.Pow(2, float64(j))) * c.b)
 			} else {
-				seq = seq + (int(math.Pow(2, float64(j))) * val.b)
+				seq = seq + (int(math.Pow(2, float64(j))) * c.b)
 			}
 
 			fmt.Printf("%d ", seq)
