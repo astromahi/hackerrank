@@ -19,15 +19,16 @@ func main() {
 		"derp",
 	}
 
+	// Mapping Java7 data types
 	m := map[string]string{
-		"float32": "double",
+		"int":     "int",
+		"int8":    "byte",
+		"int16":   "short",
+		"int32":   "int",
+		"int64":   "long",
+		"float32": "float",
 		"float64": "double",
 		"bool":    "boolean",
-		"int":     "int",
-		"int8":    "int",
-		"int16":   "int",
-		"int32":   "int",
-		"int64":   "int",
 	}
 
 	for _, v := range t {
