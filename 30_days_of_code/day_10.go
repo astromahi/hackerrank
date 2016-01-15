@@ -1,3 +1,4 @@
+// https://www.hackerrank.com/contests/30-days-of-code/challenges/day-10-binary-numbers\
 package main
 
 import (
@@ -7,13 +8,12 @@ import (
 var stack []int
 
 func toBinary(n int) {
-	if n == 1 {
-		stack = append(stack, n)
-	} else {
+	for n > 1 {
 		rem := n % 2
 		stack = append(stack, rem)
-		toBinary(n / 2)
+		n = n / 2
 	}
+	stack = append(stack, rem)
 }
 
 func main() {
