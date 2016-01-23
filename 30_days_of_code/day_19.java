@@ -9,9 +9,9 @@ interface AdvancedArithmetic{
 
 //Write your code here
 class Calculator implements AdvancedArithmetic {
-    int sum = 0;
+    int sum = 1;
     public int divisorSum(int n) {
-        int j = 1;
+        int j = 2;
         while (j <= n) {
             if (n % j == 0) {
                 //System.out.println("n : " + n + " j : " + j );
