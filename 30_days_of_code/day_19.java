@@ -3,13 +3,17 @@
 
 import java.io.*;
 import java.util.*;
-interface AdvancedArithmetic{
-   int divisorSum(int n);
+
+interface AdvancedArithmetic {
+
+    int divisorSum(int n);
 }
 
 //Write your code here
 class Calculator implements AdvancedArithmetic {
+
     int sum = 1;
+
     public int divisorSum(int n) {
         int j = 2;
         while (j <= n) {
@@ -26,10 +30,10 @@ class Calculator implements AdvancedArithmetic {
 public class Solution {
 
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-      	AdvancedArithmetic myCalculator=new Calculator(); 
-        int sum=myCalculator.divisorSum(n);
-        System.out.println("I implemented: AdvancedArithmetic\n"+sum);
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        AdvancedArithmetic myCalculator = new Calculator();
+        int sum = myCalculator.divisorSum(n);
+        System.out.println("I implemented: AdvancedArithmetic\n" + sum);
     }
 }
