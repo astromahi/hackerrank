@@ -1,3 +1,6 @@
+// https://www.hackerrank.com/contests/30-days-of-code/challenges/day-1-data-types
+// Day 1: Data Types!
+
 package main
 
 import (
