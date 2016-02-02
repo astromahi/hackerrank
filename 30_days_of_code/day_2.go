@@ -1,3 +1,6 @@
+// https://www.hackerrank.com/contests/30-days-of-code/challenges/day-2-arithmetic
+// Day 2: Arithmetic!
+
 package main
 
 import (
@@ -10,6 +13,7 @@ func round(f float64) float64 {
 }
 
 func main() {
+
 	var m float64
 	var t, x int
 
@@ -19,5 +23,5 @@ func main() {
 	tax := (m * float64(x)) / 100
 
 	price := m + tip + tax
-	fmt.Printf("The final price of the meal is $%.f.\n", round(price))
+	fmt.Printf("The final price of the meal is $%.f.", round(price))
 }
