@@ -1,3 +1,6 @@
+// https://www.hackerrank.com/contests/30-days-of-code/challenges/day-3-if-statements
+// Day 3: If-Else Statements!
+
 package main
 
 import (
@@ -18,9 +21,9 @@ func main() {
 
 	if mod != 0 {
 		fmt.Println("Weird")
-	} else if (mod == 0) && (n >= 2 && n <= 5) {
+	} else if (mod == 0) && (n <= 5) {
 		fmt.Println("Not Weird")
-	} else if (mod == 0) && (n >= 2 && n <= 20) {
+	} else if (mod == 0) && (n <= 20) {
 		fmt.Println("Weird")
 	} else if (mod == 0) && (n > 20) {
 		fmt.Println("Not Weird")
