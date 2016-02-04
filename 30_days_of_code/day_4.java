@@ -1,3 +1,5 @@
+// https://www.hackerrank.com/contests/30-days-of-code/challenges/day-4-boolean-operators-class-vs-instance
+// Day 4: Logical Operators + Class vs. Instance!
 
 import java.io.*;
 import java.util.*;
@@ -14,12 +16,9 @@ public class Person {
         if (initial_Age < 0) {
             this.age = 0;
             System.out.println("This person is not valid, setting age to 0.");
-        }
-
-        if (initial_Age >= 0) {
+        } else {
             this.age = initial_Age;
         }
-
     }
 
     public void amIOld() {
@@ -27,16 +26,11 @@ public class Person {
         // using System.out.println()...
         if (this.age < 13) {
             System.out.println("You are young.");
-        }
-
-        if (this.age >= 13 && this.age < 18) {
+        } else if (this.age < 18) {
             System.out.println("You are a teenager.");
-        }
-
-        if (this.age >= 18) {
+        } else {
             System.out.println("You are old.");
         }
-
     }
 
     public void yearPasses() {
