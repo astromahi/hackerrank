@@ -1,26 +1,18 @@
-// Printing staircase
+// https://www.hackerrank.com/contests/30-days-of-code/challenges/day-6-lets-review
+// Day 6: Let's Review!
+
 package main
 
 import "fmt"
 
 func main() {
 
-	var N int
+	var n int
+	fmt.Scanf("%d", &n)
 
-	_, err := fmt.Scanf("%d", &N)
-	if err != nil {
-		fmt.Println("something wrong")
-		return
-	}
-
-	if N < 1 || N > 100 {
-		fmt.Println("N constrains failed.")
-		return
-	}
-
-	for i := 1; i <= N; i++ {
-		for j := 1; j <= N; j++ {
-			if (i + j) > N {
+	for i := 1; i <= n; i++ {
+		for j := 1; j <= n; j++ {
+			if (i + j) > n {
 				fmt.Print("#")
 			} else {
 				fmt.Print(" ")
@@ -28,4 +20,5 @@ func main() {
 		}
 		fmt.Print("\n")
 	}
+
 }
