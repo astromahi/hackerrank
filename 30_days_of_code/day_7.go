@@ -1,3 +1,6 @@
+// https://www.hackerrank.com/contests/30-days-of-code/challenges/day-7-arrays
+// Day 7: Arrays!
+
 package main
 
 import "fmt"
