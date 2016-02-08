@@ -1,3 +1,6 @@
+// https://www.hackerrank.com/contests/30-days-of-code/challenges/day-8-dictionaries-and-maps
+// Day 8: Dictionaries and Maps!
+
 package main
 
 import (
