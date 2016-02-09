@@ -1,3 +1,6 @@
+// https://www.hackerrank.com/contests/30-days-of-code/challenges/day-9-recursion
+// Day 9: Recursion!
+
 package main
 
 import "fmt"
@@ -28,6 +31,6 @@ func gcd(x, y int) int {
 
 func main() {
 	var x, y int
-	fmt.Scanf("%d\n%d\n", &x, &y)
+	fmt.Scanf("%d %d\n", &x, &y)
 	fmt.Println(gcd(x, y))
 }
