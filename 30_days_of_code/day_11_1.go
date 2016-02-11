@@ -1,5 +1,6 @@
-//https://www.hackerrank.com/contests/30-days-of-code/challenges/day-11-more-review
-//Day 11: 2D-Arrays + More Review!
+// https://www.hackerrank.com/contests/30-days-of-code/challenges/day-11-more-review
+// Day 11: 2D-Arrays + More Review!
+
 package main
 
 import (
