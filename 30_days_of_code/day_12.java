@@ -39,11 +39,11 @@ class Grade extends Student {
         char grade;
         if (score < 40) {
             grade = 'D';
-        } else if (score >= 40 && score < 60) {
+        } else if (score < 60) {
             grade = 'B';
-        } else if (score >= 60 && score < 75) {
+        } else if (score < 75) {
             grade = 'A';
-        } else if (score >= 75 && score < 90) {
+        } else if (score < 90) {
             grade = 'E';
         } else {
             grade = 'O';
