@@ -12,10 +12,10 @@ interface AdvancedArithmetic {
 //Write your code here
 class Calculator implements AdvancedArithmetic {
 
-    int sum = 1;
+    int sum = 0;
 
     public int divisorSum(int n) {
-        int j = 2;
+        int j = 1;
         while (j <= n) {
             if (n % j == 0) {
                 //System.out.println("n : " + n + " j : " + j );
