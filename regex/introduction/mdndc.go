@@ -4,10 +4,10 @@
 package main
 
 import (
-	"fmt"
-	"regexp"
 	"bufio"
+	"fmt"
 	"os"
+	"regexp"
 )
 
 func main() {
